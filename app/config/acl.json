@@ -1,0 +1,19 @@
+{
+  "acl": {
+    "roles": {
+      "Guest": {},
+      "User": {},
+      "Manager": {"inherits": ["User"]},
+      "Admin": {"inherits": "Manager"}
+    },
+    "resources": {
+      "Index": {
+        "index": ["Guest"],
+        "signup": ["Guest"]
+      },
+      "Admin": {
+        "index": ["User"]
+      }
+    }
+  }
+}

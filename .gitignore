@@ -1,0 +1,5 @@
+/vendor/
+/common/config/config.php
+/docker/mysql/data/
+
+.idea
